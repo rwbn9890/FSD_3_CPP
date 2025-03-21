@@ -57,6 +57,18 @@ while(choice != 0)
                     cout << "element Updated successfully...!" << endl;
                     break;
             case 3: 
+                    int insEle, insIndex;
+                    cout << "Index: ";
+                    cin >> insIndex;
+                    cout << "Element: ";
+                    cin >> insEle;
+
+                    for(int i=size; i>insIndex; i--)
+                    {
+                        arr[i] = arr[i-1];
+                    }
+                    arr[insIndex] = insEle;
+                    size++;
 
 
                     cout << "element Inserted successfully...!" << endl;
@@ -72,8 +84,6 @@ while(choice != 0)
                     break;
           
         }
-
-
 }
 
     return 0;
